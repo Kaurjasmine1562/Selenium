@@ -18,7 +18,7 @@ public class ActionsClass {
 
 		Thread.sleep(4000);
 		
-		//context click.....
+		//context click
 		WebElement rtclick = driver.findElement(By.xpath("//div[@id='hot-spot']"));
 		Actions act = new Actions(driver);
 		act.contextClick(rtclick).perform();   //.perform is necessary to run actions class 
@@ -33,6 +33,7 @@ public class ActionsClass {
 		//double click
 		WebElement ele = driver.findElement(By.xpath("//a[text()='Elemental Selenium']"));
 		act.contextClick(ele).perform();       //.perform is necessary to run actions class 
+		//wait
 		Thread.sleep(2000);
 		
 
